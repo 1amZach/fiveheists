@@ -14,10 +14,10 @@ Config.fiveboardGroup = 'Police'
 Config.money = { account = 'cash' }
 
 -- Clear exploits (loot claimed without starting, from across the map, or
--- impossibly fast) are sent to warden as this kind. 'teleport' only logs on
--- warden's defaults. 'honeypot' bans, so think before using it.
+-- impossibly fast) are sent to warden as this kind. 'exploit' only logs on
+-- warden's defaults; raise it in warden's config to kick or ban.
 Config.flagCheaters = true
-Config.flagKind = 'teleport'
+Config.flagKind = 'exploit'
 Config.flagDistance = 30.0
 
 -- Keep cooldowns in cooldowns.json so a restart doesn't reopen everything.

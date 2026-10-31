@@ -39,7 +39,7 @@ All numbers, items and locations are in `config.lua`.
 - **[fiveboard](https://github.com/1amZach/fiveboard):** the board shows each robbery type busy while one is going and the cooldown after. Its police count is used, so the board and the robberies always agree.
 - **[fivelog](https://github.com/1amZach/fivelog):** everything goes in under the `heists` kind, with amounts.
 - **[fivepanel](https://github.com/1amZach/fivepanel):** shows those logs.
-- **[warden](https://github.com/1amZach/warden):** clear exploits are flagged as `teleport`, which only logs on warden's defaults. Set `Config.flagKind` to something harsher if you want kicks or bans.
+- **[warden](https://github.com/1amZach/warden):** clear exploits, like loot claimed from across the map or far too fast, are sent to warden as `exploit`. That only logs by default; set it to kick or ban in warden's `Config.detections` once you trust it. Needs warden 1.0.3 or newer.
 
 ## Install
 

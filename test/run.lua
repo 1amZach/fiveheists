@@ -274,7 +274,7 @@ do -- a register, start to finish
     local f = flags()
     local done, why = finish(1, 'store:grove', 'register1')
     check('too fast refused', done == false and why == 'That was too quick.')
-    check('way too fast flagged', flags() == f + 1 and calls.warden[#calls.warden].kind == 'teleport' and calls.warden[#calls.warden].detail:find('^fiveheists: '))
+    check('way too fast flagged', flags() == f + 1 and calls.warden[#calls.warden].kind == 'exploit' and calls.warden[#calls.warden].detail:find('^fiveheists: '))
     check('nothing paid', cash(1) == 0)
     check('register free again', H.sites['store:grove'].busy.register1 == nil)
 
